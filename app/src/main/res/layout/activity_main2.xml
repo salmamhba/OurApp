@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="29dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_background"
+                android:padding="2dp"
+                >
+
+                <TextView
+                    android:id="@+id/textViewPhrase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vous_serez_le_plus_proche_au_march_du_travail"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_background"
+                android:padding="1dp">
+                <TextView
+                    android:id="@+id/textViewPhrasee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/c_est_gratuit"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vous_tes"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="67dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+                    <RadioButton
+                        android:id="@+id/radioButtonCandidat"
+                        android:layout_width="290dp"
+                        android:layout_height="33dp"
+                        android:text="@string/candidat_cherche_des_annonces_et_poste_des_cv"
+                        tools:layout_editor_absoluteX="99dp"
+                        tools:layout_editor_absoluteY="126dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radioButtonRecruteur"
+                        android:layout_width="304dp"
+                        android:layout_height="44dp"
+                        android:text="@string/recruteur_cherche_cv_et_poste_des_annonces_de_travail"
+                        tools:layout_editor_absoluteX="98dp"
+                        tools:layout_editor_absoluteY="66dp"
+                        android:layout_marginBottom="20dp"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e_maile"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/entrez_votre_adresse_e_mail"
+                    android:layout_marginBottom="30dp"
+                    tools:ignore="Autofill,TextFields" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewville"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ville"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerVille"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/s_lectionnez_une_ville"
+                    android:entries="@array/TabVille"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mot_de_passee"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="40dp"/>
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mot_de_paasse"
+                    android:inputType="textPassword"
+                    tools:layout_editor_absoluteX="42dp"
+                    tools:layout_editor_absoluteY="520dp"
+                    tools:ignore="Autofill" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/au_moins_5_caracteres_choisisez_un_mot_de_passe_qui_n_est_pas_facile_a_deviner"
+                android:textSize="14sp"
+                android:layout_marginBottom="120dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"> <!-- Pour éviter que le contenu ne soit caché sous la barre de navigation -->
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@color/blue_background"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"> <!-- Aligner en bas de l'écran -->
+
+                    <TextView
+                        android:id="@+id/textViewPhrase2"
+                        android:layout_width="228dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/en_validant_mon_inscription_j_accepte_les_conditions_g_n_rales_d_utilisation_du_site_alkhad_ma"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+
+                    <Button
+                        android:id="@+id/buttonSeConnecter"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/cr_er_un_compte"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="35sp"
+                    >
+                    <TextView
+                        android:layout_width="148dp"
+                        android:layout_height="83dp"
+                        android:text="@string/confirmez_le_mot_de_passe"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="30sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/editTextConfirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirmez_le_mot_de_passee"
+                        android:inputType="textPassword"
+                        tools:layout_editor_absoluteX="32dp"
+                        tools:layout_editor_absoluteY="630dp"
+                        tools:ignore="Autofill" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

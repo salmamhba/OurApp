@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">SO</string>
+    <string name="vous_n_avez_pas_encore_de_compte">Vous n\'avez pas encore de compte?</string>
+    <string name="connexion">Connexion</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="votre_adress_email">Votre address e-mail…</string>
+    <string name="mot_de_passe">Mot de passe:</string>
+    <string name="votre_mot_de_passe">votre mot de passe…</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="garder_ma_session_active">Garder ma session active</string>
+    <string name="mot_de_passe_oubli">Mot de passe oublié?</string>
+    <string name="inscrivez_vous_ici">Inscrivez-vous ici</string>
+    <string name="vous_serez_le_plus_proche_au_march_du_travail">Vous serez le plus proche au marché du travail</string>
+    <string name="c_est_gratuit">C\'est gratuit!</string>
+    <string name="vous_tes">Vous êtes :</string>
+    <string name="candidat_cherche_des_annonces_et_poste_des_cv">Candidat cherche des annonces et poste des CV</string>
+    <string name="recruteur_cherche_cv_et_poste_des_annonces_de_travail">Recruteur cherche CV et poste des annonces de travail</string>
+    <string name="e_maile">E-mail:</string>
+    <string name="entrez_votre_adresse_e_mail">Entrez votre adresse e-mail</string>
+    <string name="ville">Ville :</string>
+    <string name="s_lectionnez_une_ville">Sélectionnez une ville</string>
+    <string name="mot_de_passee">Mot de Passe:</string>
+    <string name="mot_de_paasse">Mot de passe</string>
+    <string name="au_moins_5_caracteres_choisisez_un_mot_de_passe_qui_n_est_pas_facile_a_deviner">(au moins 5 caracteres)choisisez un mot de passe qui n\'est pas facile a deviner</string>
+    <string name="en_validant_mon_inscription_j_accepte_les_conditions_g_n_rales_d_utilisation_du_site_alkhad_ma">En validant mon inscription, j\'accepte les conditions générales d\'utilisation du site alkhad.ma</string>
+    <string name="cr_er_un_compte">CRÉER UN COMPTE!</string>
+    <string name="confirmez_le_mot_de_passe">Confirmez le mot de passe :</string>
+    <string name="confirmez_le_mot_de_passee">Confirmez le mot de passe</string>
+    <string name="d_poser_une_annonce">Dèposer une annonce</string>
+    <string name="_1_3_a_propos_de_votre_annonce">⅓ : a propos de votre annonce</string>
+    <string name="titre">Titre (*):</string>
+    <string name="categorier">Categorier:(*)</string>
+    <string name="choisir_une_cat_gorie">Choisir une catégorie</string>
+    <string name="secteur">Secteur:(*)</string>
+    <string name="choisir_une_cat_goriee">Choisir une catégorie</string>
+    <string name="type_de_contrat">Type de Contrat:</string>
+    <string name="description">Description :</string>
+    <string name="villee">Ville :</string>
+    <string name="suivant">Suivant</string>
+    <string name="registrer">registrer</string>
+    <string-array name="TabVille">
+        <item>Agadir</item>
+        <item>Casa</item>
+        <item>Fes</item>
+        <item>Safi</item>
+        <item>El jadida</item>
+    </string-array>
+    <string-array name="TabCategorie">
+        <item>Informatique et Technologies</item>
+        <item>Finance et Comptabilité</item>
+        <item>Ventes et Marketing</item>
+
+    </string-array>
+    <string-array name="TabSecteur">
+        <item>Technologie de l\'Information</item>
+        <item>Finance et Banque</item>
+        <item>Santé et Pharmaceutique</item>
+        <item>Industrie et Fabrication</item>
+    </string-array>
+
+
+</resources>
